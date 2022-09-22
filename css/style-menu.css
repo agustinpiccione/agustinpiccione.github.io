@@ -12,6 +12,7 @@
 .logo{
     display: flex;
     background-image: url(../imagenes/fondo\ portada.png);
+    background-size: cover;
     height: 16rem;
     align-items: center;
     justify-content: center;
@@ -83,7 +84,13 @@
     color: rgb(255, 254, 254);
 }
 
-
+@media (min-width:400px){
+    .flex-container {
+        
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
 
 
 
@@ -116,9 +123,7 @@
 
 /* css del perfil */
 
-main {
-   
-}
+
 
 .foto_perfil {
     padding-left: 500px;
