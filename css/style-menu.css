@@ -1,0 +1,234 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+.body1{
+    background: linear-gradient(to bottom, rgb(234, 63, 231) 60%, rgb(53, 157, 222));
+}
+
+.logo{
+    display: flex;
+    background-image: url(../imagenes/fondo\ portada.png);
+    background-size: cover;
+    height: 16rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    max-height: 10rem;
+   
+   
+}
+
+.titulo{
+    
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    justify-content: center;
+
+}
+   
+.flex-container{ 
+    
+    background-color: rgb(220, 213, 209);
+    height: 75vh;
+    padding: 10px;
+    display: flex;
+    gap: 20px ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+   
+
+    
+
+}
+
+.flex-item {
+    background-color: rgb(20, 20, 20);
+    color: rgb(253, 250, 250);
+    width: 200px;
+    border-radius: 10px;
+    border-color: 150px rgb(125, 25, 178);
+    box-shadow: 0px 0px 5px 1px rgb(77, 8, 85);
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    
+    
+    
+    
+    
+}
+
+.flex-item img {
+    background: linear-gradient(to bottom, rgb(197, 37, 159) 70%, rgba(162, 37, 211, 0.916));
+    width: 100%;
+    height: auto;
+    border:1px solid black;
+    max-height: 250px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-color: 50px solid rgb(125, 25, 178);
+    box-shadow: 30px black;
+   
+}
+
+.flex-item:hover{
+    
+    background-color: rgb(106, 29, 125);
+    box-shadow: 0px 0px 5px 3px rgb(183, 28, 134);
+    color: rgb(255, 254, 254);
+}
+
+@media (min-width:400px){
+    .flex-container {
+        
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    
+
+}
+
+
+
+
+
+.pie{
+    
+    padding: 0px;
+    height: 200px;
+    width: auto;
+    background-color: rgb(37, 36, 36);
+}
+
+.pie p {
+    text-align: left;
+    color: #f5edf4;
+    text-shadow: rgb(250, 12, 214) 1px 0px 5px;
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: smaller;
+    
+    
+}
+
+
+.ofertas{
+    align-items: center;
+}
+
+
+/* css del perfil */
+
+.miperfil{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "imagen nombre nombre"
+    "form form form"
+    "form form form"
+    ;
+    grid-template-columns: 2fr 2fr 1fr;
+    border: 2px solid rgb(134, 8, 122);
+    box-shadow: 0px 0px 5px 4pxrgb(68, 17, 69);
+    
+    
+    
+}
+
+.imgn {
+    padding-top: 3%;
+    background-color: rgb(243, 242, 244);
+grid-area: imagen;
+padding-left: 3%;
+
+}
+
+.imgn img{
+    align-content: center;
+}
+
+
+.nombre {
+background-color: rgb(243, 242, 244);
+grid-area: nombre;
+padding-top: 10%;
+padding-left: 3%;
+}
+
+.form{
+background-color: rgb(243, 242, 244);
+grid-area: form;
+padding-top: 3%;
+}
+
+.form input{
+    width: 90%;
+    height: 30px;
+    margin: .5rem;
+  }
+  
+  .form button{
+    padding: .5em 1em;
+    border:none;
+    background: rgb(100,200,255);
+    cursor: pointer;
+  }
+  
+  .form-container{
+    max-width:700px;
+    margin: 0 auto;
+  }
+  
+  .form-element {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+    
+  }
+
+
+/*Nosotros css*/
+
+.Nosotros{
+    display: grid;
+        
+        display: grid;
+        height: 600px;
+        grid-template-areas: 
+        "imagen texto texto"
+        "imagen2 texto2 ";
+        grid-template-columns: 500px 2fr;
+       
+}
+
+.imagen{
+    background-color: coral;
+    
+}
+
+.imagen img {
+    height: 400px;
+}
+
+.texto {
+    background-color: brown;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.imagen2{
+    background-color: cyan;
+}
+
+.texto2{
+    background-color: azure;
+}
